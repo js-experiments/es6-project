@@ -1,0 +1,13 @@
+{
+  "name": "es6-project",
+  "version": "0.0.0",
+  "dependencies": {
+    "uikit": "~2.8.0",
+    "es6-module-loader": "~0.6.1",
+    "jquery": "~2.1.1",
+    "es6-shim": "~0.13.0"
+  },
+  "resolutions": {
+    "jquery": "~2.1.1"
+  }
+}

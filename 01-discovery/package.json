@@ -1,0 +1,11 @@
+{
+  "name": "es6-project",
+  "description" : "es6-project",
+  "version": "0.0.0",
+  "dependencies": {
+    "express": "4.1.x",
+    "body-parser": "1.0.2"
+  }
+}
+
+
