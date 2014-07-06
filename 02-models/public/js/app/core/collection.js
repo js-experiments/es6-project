@@ -27,6 +27,7 @@ class Collection {
 
   fetch () {
     return $.ajax({url: this.url, type: "GET", data: this.fields, success: (models) => {
+      this.models = []; /* empty list */
       models.forEach((fields) => {
         this.add(new this.model(fields));
       })
