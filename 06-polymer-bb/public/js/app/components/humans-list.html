@@ -1,0 +1,16 @@
+<link rel="import" href="../../../bower_components/polymer/polymer.html">
+
+<polymer-element name="humans-list">
+  <template>
+    <ul>
+      <template repeat="{{humans}}">
+        <li>{{firstName}} {{lastName}}</li>
+      </template>
+    </ul>
+  </template>
+
+  <script>
+    System.import('../../js/app/components/humans-list');
+  </script>
+
+</polymer-element>

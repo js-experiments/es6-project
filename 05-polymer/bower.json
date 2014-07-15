@@ -1,0 +1,14 @@
+{
+  "name": "es6-project",
+  "version": "0.0.0",
+  "dependencies": {
+    "uikit": "~2.8.0",
+    "jquery": "~2.1.1",
+    "traceur": "~0.0.49",
+    "polymer": "Polymer/polymer#~0.3.3",
+    "core-elements": "Polymer/core-elements#~0.3.3"
+  },
+  "resolutions": {
+    "jquery": "~2.1.1"
+  }
+}

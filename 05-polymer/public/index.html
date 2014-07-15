@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>es6-project</title>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+  <link rel="icon" sizes="196x196" href="html5.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" href="bower_components/uikit/dist/css/uikit.almost-flat.min.css" />
+</head>
+
+<body style="padding: 20px">
+  <h1></h1>
+  <humans-list></humans-list>
+
+  <!-- 1. Load platform.js for polyfill support. -->
+  <script src="bower_components/platform/platform.js"></script>
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/handlebars/handlebars.min.js"></script>
+  <script src="bower_components/traceur/traceur.js"></script>
+
+  <!-- my components -->
+  <link rel="import" href="js/app/components/humans-list.html">
+
+  <script>
+    System.import('js/app/main');
+  </script>
+</body>
+</html>
