@@ -4,7 +4,8 @@ class Human extends Backbone.Model {
   constructor (args) {
     super(args)
 
-    //Getters and Setters
+    //Getters and Setters : properties
+
     Object.defineProperty(this, "firstName", {
       get: function (){ return this.get("firstName")} ,
       set: function (value) { this.set("firstName",value); }

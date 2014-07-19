@@ -5,6 +5,8 @@ Polymer("humans-list",{
   ready: function () {
 
     this.humansCollection = new Humans();
+
+    // subscribe to fetch event
     this.humansCollection.on({"fetch":this.update()});
 
     this.humansCollection.fetch().done(()=>{ /* get all humans from database */
@@ -19,7 +21,9 @@ Polymer("humans-list",{
         bob.save().done(
           () => john.save().done(
             () => jane.save().done(
-              ()=> this.humansCollection.fetch().done(console.log("humans created:", this.humansCollection)) /* fetch again */
+              ()=> this.humansCollection.fetch().done( /* fetch again */
+                console.log("humans created:", this.humansCollection)
+              )
             )
           )
         );
